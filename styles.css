@@ -1,0 +1,39 @@
+/* Estilos para la ventana de inicio */
+.splash-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff; 
+}
+
+/* Ocultar el contenido principal inicialmente */
+.hidden {
+    display: none;
+}
+/* Botones para cambiar de producto */
+.buttons-container {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 50%; /* Ajusta el ancho según sea necesario */
+}
+
+.round-button {
+    border-radius: 50%;
+    width: 50px; /* Ajusta el tamaño del botón */
+    height: 50px; /* Ajusta el tamaño del botón */
+    background-color: #ccc; /* Color de fondo de los botones */
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.round-button img {
+    width: auto; /* Ajusta el tamaño del icono dentro del botón */
+    height: 70%;
+}

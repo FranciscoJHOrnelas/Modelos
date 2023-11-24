@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script> 
+    <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="splash-screen">
+        
+        <img src="img/inicio.png" alt="Logo de PopcornVision">
+    </div>
+
+    <main class="hidden">
+        <a-scene>
+            <a-assets>
+                <a-asset-item
+                  id="soda"
+                  src="https://cdn.glitch.global/108634cd-3373-4ef2-8a8d-4030675a6982/SodaChica.glb?v=1700814335503"
+                  
+                ></a-asset-item>
+              </a-assets>
+            <a-entity camera="active: true" look-controls wasd-controls position="0 1.6 0" data-aframe-default-camera></a-entity>
+            <a-entity camera look-controls>
+                <a-entity id="soda" gltf-model="#soda" scale="0.08 0.08 0.08" position="0 0 -0.5"></a-entity>
+              </a-entity>
+        </a-scene>
+    </main>
+
+    <div class="buttons-container">
+        <button class="round-button"><img src="img/Nachos.png" alt="Icono 1"></button>
+        <button class="round-button"><img src="img/HD.png" alt="Icono 2"></button>
+        <button class="round-button"><img src="img/Soda.png" alt="Icono 3"></button>
+        <button class="round-button"><img src="img/Palomitas.png" alt="Icono 4"></button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
